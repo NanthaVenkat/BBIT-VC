@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBIT VC</title>
+
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- bootstrap Script -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<nav class="navbar navbar-expand-lg py-3">
+    <div class="container">
+        <div class="nav-left logo-wrr d-flex align-items-center">
+            <a class="navbar-brand me-5" href="#"><img src="images/BBIT-logo.svg" alt="Bright Bridge Logo"></a>
+            <div class="navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="" class="nav-link">Find Doctors</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="nav-right d-flex align-items-center">
+            <ul class="message-items d-flex align-items-center mb-0">
+                <li class="me-3">
+                    <div class="nav-search-bar rounded-5 d-flex align-items-center justify-content-between">
+                        <input type="text" placeholder="Search Content" class="border-0 me-2 bg-transparent">
+                        <a href="javascript:void(0)" id="hav-search-btn"><img src="images/search-lence-icon.svg" alt="Search Bar"></a>
+                    </div>
+                </li>
+                <li class="me-3"><a href="#"><img src="images/message-square.svg" alt="Message"><span class="notifi-indicater">1</span></a></li>
+                <li class="me-3"><a href="#"><img src="images/bell-icon.svg" alt="Notification"><span class="notifi-indicater">9+</span></a></li>
+            </ul>
+
+            <div class="log-in id-btn"><a href="#" class="btn btn-light ms-3 fw-bolder rounded-1">Log In</a></div>
+            <div class="sign-up id-btn"><a href="#" class="btn btn-primary ms-3 fw-bolder rounded-1">Sign Up</a></div>
+        </div>
+    </div>
+</nav>
+
+<body>

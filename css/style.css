@@ -1,0 +1,91 @@
+/* HelveticaNeueBlack */
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url("../fonts/Helvetica-fonts/HelveticaNeueLight.woff") format("woff"),
+        url("../fonts/Helvetica-fonts/HelveticaNeueMedium.woff") format("woff"),
+        url("../fonts/Helvetica-fonts/HelveticaNeueBold.woff") format("woff"),
+        url("../fonts/Helvetica-fonts/HelveticaNeueRoman.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url("../fonts/Helvetica-fonts/HelveticaNeueLightItalic.woff") format("woff"),
+        url("../fonts/Helvetica-fonts/HelveticaNeueMediumItalic.woff") format("woff"),
+        url("../fonts/Helvetica-fonts/HelveticaNeueBoldItalic.woff") format("woff"),
+        url("../fonts/Helvetica-fonts/HelveticaNeueRomanItalic.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+}
+
+* {
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+.navbar-brand img {
+    width: 220px;
+}
+
+.message-items li {
+    list-style: none;
+}
+
+.message-items li a img {
+    width: 20px;
+    height: 20px;
+}
+
+.id-btn .btn {
+    min-width: 100px;
+}
+
+.navbar-nav .nav-link {
+    color: #151515;
+    font-weight: 500;
+}
+
+.message-items li a {
+    position: relative;
+    line-height: 1;
+}
+
+.notifi-indicater {
+    background-color: #CF0D0D;
+    color: #fff;
+    font-size: 8px;
+    position: absolute;
+    padding: 4px;
+    line-height: 1;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    border: 2px solid #fff;
+    top: -9px;
+    right: -9px;
+}
+
+.nav-search-bar {
+    transition: 0.3s;
+    width: max-content;
+    transform-origin: right;
+}
+
+.nav-search-bar.active {
+    background-color: #02b1da4f;
+    padding: 5px 15px;
+    width: 100%;
+}
+
+.nav-search-bar input {
+    display: none;
+}
+
+.nav-search-bar.active input {
+    outline: none;
+    display: block;
+}
