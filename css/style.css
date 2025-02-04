@@ -23,8 +23,9 @@
     font-family: "Helvetica Neue", sans-serif;
 }
 
+/* nav bar */
 .navbar-brand img {
-    width: 220px;
+    max-width: 220px;
 }
 
 .message-items li {
@@ -43,6 +44,7 @@
 .navbar-nav .nav-link {
     color: #151515;
     font-weight: 500;
+    width: max-content;
 }
 
 .message-items li a {
@@ -78,7 +80,7 @@
 .nav-search-bar.active {
     background-color: #02b1da4f;
     padding: 5px 15px;
-    width: 100%;
+    width: calc(100% + 10px);
 }
 
 .nav-search-bar input {
@@ -88,4 +90,22 @@
 .nav-search-bar.active input {
     outline: none;
     display: block;
+    font-size: 14px;
+}
+
+/* nav bar end */
+
+
+/* hero section */
+.hero-section {
+    background-image: url("../Images/Home-Banner.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (min-width: 1200px) {
+    .hero-section {
+        height: 100svh;
+    }
 }
