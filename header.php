@@ -17,8 +17,10 @@
 
     <!-- swiper slider -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    
+
+    <!-- Helvetica Neue -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/helvatica-neue-lt@1.0.1/index.min.css" rel="stylesheet"> -->
+
 </head>
 
 <nav class="navbar navbar-expand-lg py-3">
@@ -46,8 +48,8 @@
                     <li class="me-3"><a href="#"><img src="images/bell-icon.svg" alt="Notification"><span class="notifi-indicater">9+</span></a></li>
                 </ul>
 
-                <div class="log-in id-btn"><a href="#" class="btn btn-light ms-3 fw-bolder rounded-1">Log In</a></div>
-                <div class="sign-up id-btn"><a href="#" class="btn btn-primary ms-3 fw-bolder rounded-1">Sign Up</a></div>
+                <div class="log-in id-btn"><a href="#" class="btn btn-light ms-3 rounded-1">Log In</a></div>
+                <div class="sign-up id-btn"><a href="#" class="btn btn-primary ms-3 rounded-1 ">Sign Up</a></div>
             </div>
         </div>
     </div>

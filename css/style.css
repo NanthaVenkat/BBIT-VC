@@ -1,111 +1,667 @@
-/* HelveticaNeueBlack */
+/* Helvetica Neue */
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+
 @font-face {
-    font-family: "Helvetica Neue";
-    src: url("../fonts/Helvetica-fonts/HelveticaNeueLight.woff") format("woff"),
-        url("../fonts/Helvetica-fonts/HelveticaNeueMedium.woff") format("woff"),
-        url("../fonts/Helvetica-fonts/HelveticaNeueBold.woff") format("woff"),
-        url("../fonts/Helvetica-fonts/HelveticaNeueRoman.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Degular';
+  src: url('../fonts/Degular-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Helvetica Neue";
-    src: url("../fonts/Helvetica-fonts/HelveticaNeueLightItalic.woff") format("woff"),
-        url("../fonts/Helvetica-fonts/HelveticaNeueMediumItalic.woff") format("woff"),
-        url("../fonts/Helvetica-fonts/HelveticaNeueBoldItalic.woff") format("woff"),
-        url("../fonts/Helvetica-fonts/HelveticaNeueRomanItalic.woff") format("woff");
-    font-weight: normal;
-    font-style: italic;
+  font-family: 'Degular';
+  src: url('../fonts/Degular-ThinItalic.otf') format('opentype');
+  font-weight: 100;
+  font-style: italic;
 }
 
-* {
-    font-family: "Helvetica Neue", sans-serif;
+@font-face {
+  font-family: 'Degular';
+  src: url('../fonts/Degular-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('../fonts/Degular-LightItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('../fonts/Degular-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('../fonts/Degular-RegularItalic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('../fonts/Degular-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('../fonts/Degular-MediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('../fonts/Degular-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('../fonts/Degular-SemiboldItalic.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('../fonts/Degular-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('../fonts/Degular-BoldItalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('../fonts/Degular-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('../fonts/Degular-BlackItalic.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('../fonts/HelveticaNeueThin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('../fonts/HelveticaNeueThinItalic.otf') format('opentype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('../fonts/HelveticaNeueLight.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('../fonts/HelveticaNeueLightItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('../fonts/HelveticaNeueRegular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('../fonts/HelveticaNeueRegularItalic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('../fonts/HelveticaNeueMedium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('../fonts/HelveticaNeueMediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('../fonts/HelveticaNeueSemibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('../fonts/HelveticaNeueSemiboldItalic.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('../fonts/HelveticaNeueBold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('../fonts/HelveticaNeueBoldItalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('../fonts/HelveticaNeueBlack.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('../fonts/HelveticaNeueBlackItalic.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+:root {
+  --primary-clr: #FF9A30;
+  --secondary-clr: #02B1DA;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@media (min-width: 1770px) {
+  .text-sms {
+    font-size: 18px !important;
+  }
+
+  .text-sm {
+    font-size: 20px !important;
+  }
+
+  .text-md {
+    font-size: 22px !important;
+  }
+
+  .text-mdx {
+    font-size: 24px !important;
+  }
+
+}
+
+.text-sms {
+  font-size: 16px !important;
+}
+
+.text-sm {
+  font-size: 18px !important;
+}
+
+.text-md {
+  font-size: 20px !important;
+}
+
+.text-mdx {
+  font-size: 22px !important;
+}
+
+@media (max-width: 576px) {
+  .text-sms {
+    font-size: 14px !important;
+  }
+
+  .text-sm {
+    font-size: 14px !important;
+  }
+
+  .text-md {
+    font-size: 16px !important;
+  }
+
+  .text-mdx {
+    font-size: 20px !important;
+  }
+}
+
+.ltr-sp_1_3 {
+  letter-spacing: 1.3px;
+}
+
+.titles-title {
+  font-weight: 500;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #909090;
+}
+
+.main-title {
+  font-size: 32px;
+  font-weight: 600;
+  font-family: 'Degular', sans-serif;
+}
+
+@media (max-width: 576px) {
+  .main-title {
+    font-size: 26px;
+  }
 }
 
 /* nav bar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+  background: #fff;
+}
+
 .navbar-brand img {
-    max-width: 220px;
+  max-width: 220px;
 }
 
 .message-items li {
-    list-style: none;
+  list-style: none;
 }
 
 .message-items li a img {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 .id-btn .btn {
-    min-width: 100px;
+  min-width: 100px;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 400;
 }
 
 .navbar-nav .nav-link {
-    color: #151515;
-    font-weight: 500;
-    width: max-content;
+  color: #151515;
+  font-weight: 400;
+  font-family: 'Helvetica Neue', sans-serif;
+  width: max-content;
 }
 
 .message-items li a {
-    position: relative;
-    line-height: 1;
+  position: relative;
+  line-height: 1;
 }
 
 .notifi-indicater {
-    background-color: #CF0D0D;
-    color: #fff;
-    font-size: 8px;
-    position: absolute;
-    padding: 4px;
-    line-height: 1;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 600;
-    border: 2px solid #fff;
-    top: -9px;
-    right: -9px;
+  background-color: #CF0D0D;
+  color: #fff;
+  font-size: 8px;
+  position: absolute;
+  padding: 4px;
+  line-height: 1;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  border: 2px solid #fff;
+  top: -9px;
+  right: -9px;
 }
 
 .nav-search-bar {
-    transition: 0.3s;
-    width: max-content;
-    transform-origin: right;
+  transition: 0.3s;
+  width: max-content;
+  transform-origin: right;
 }
 
 .nav-search-bar.active {
-    background-color: #02b1da4f;
-    padding: 5px 15px;
-    width: calc(100% + 10px);
+  background-color: #02b1da4f;
+  padding: 5px 15px;
+  width: calc(100% + 10px);
 }
 
 .nav-search-bar input {
-    display: none;
+  display: none;
 }
 
 .nav-search-bar.active input {
-    outline: none;
-    display: block;
-    font-size: 14px;
+  outline: none;
+  display: block;
+  font-size: 14px;
 }
 
 /* nav bar end */
 
 
 /* hero section */
-.hero-section {
-    background-image: url("../Images/Home-Banner.webp");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 @media screen and (min-width: 1200px) {
-    .hero-section {
-        height: 100svh;
-    }
+  .hero__section {
+    height: 100vh;
+  }
+}
+
+.hero-swiper .swiper-slide {
+  background-image: url("../Images/Home-Banner.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 576px) {
+  .hero-swiper .swiper-slide {
+    background-image: url("../Images/Home-Banner_mbl.webp");
+  }
+}
+
+.hero-swiper {
+  height: 100%;
+}
+
+.hero-content {
+  max-width: 500px;
+}
+
+.hero-content .btn {
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 10px 25px;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.hero-content .btn:hover {
+  background-color: #fff;
+  border: 1px solid #ffffff00;
+  color: #151515;
+}
+
+/* find doctor */
+
+.find-a-doc {
+  background-color: #151515;
+}
+
+:root {
+  --toggle-padding: 2px;
+}
+
+.toggle-bar {
+  width: 50px;
+  height: 25px;
+  background: #02B1DA1A;
+  border-radius: 50px;
+  position: relative;
+  padding: var(--toggle-padding);
+  border: 2px solid #02B1DA;
+}
+
+.toggle-btn {
+  position: absolute;
+  width: calc(50% - var(--toggle-padding));
+  height: calc(100% - var(--toggle-padding));
+  background: #02B1DA;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.toggle-btn.disable {
+  left: calc(0px + 2px);
+}
+
+.toggle-btn.enable {
+  right: calc(0px + 2px);
+}
+
+.hero-main-title {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.3;
+  font-family: "Degular", sans-serif;
+}
+
+.main-sml-title {
+  font-weight: 400;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+@media (max-width: 992px) {
+  .hero-main-title {
+    font-size: 35px;
+  }
+}
+
+.hero-swiper .swiper-button-next,
+.hero-swiper .swiper-button-prev {
+  color: #fff;
+  line-height: 1;
+  width: 40px;
+  height: 40px;
+  border: 1px solid;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-swiper .swiper-button-next:after,
+.hero-swiper .swiper-button-prev:after {
+  font-size: 18px;
+}
+
+.hero-swiper .swiper-button-next {
+  right: 50px;
+}
+
+.hero-swiper .swiper-button-prev {
+  left: 50px;
+}
+
+.hero-swiper .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  transition: 0.3s;
+  background-color: #FFFFFF80;
+  opacity: 1;
+}
+
+.hero-swiper .swiper-pagination-bullet-active {
+  width: 30px;
+  border-radius: 50px;
+  background-color: #02B1DA;
+}
+
+@media (max-width: 576px) {
+  .hero__section .swiper-slide {
+    height: 650px;
+  }
+
+  .hero-content .btn {
+    background-color: var(--primary-clr);
+    border-color: #ffffff00;
+    color: #151515;
+  }
+
+  .hero-main-title {
+    font-size: 28px;
+  }
+}
+
+/* search doctor section */
+
+#find-doc h1 {
+  font-size: 35px;
+  font-family: "Degular", sans-serif;
+  font-weight: 600;
+}
+
+#find-doc input {
+  border: 1px solid #909090;
+  color: #fff;
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 1200px) {
+  #find-doc h1 {
+    width: 100%;
+  }
+
+  #find-doc .input-wr {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #find-doc .input-wr {
+    flex-direction: column;
+  }
+
+  #find-doc input {
+    width: 100%;
+  }
+
+  #find-doc .btn {
+    width: 100%;
+  }
+
+  #find-doc h1 {
+    font-size: 28px;
+  }
+}
+
+/* categori section */
+
+.category-container {
+  background-color: #F8F9FB;
+  border: 1px solid #D0D0D4;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.category-container:hover {
+  border-color: #02B1DA;
+  background-color: #02B1DA0F;
+}
+
+.category-container img {
+  width: 40px;
+  height: 40px;
+}
+
+.category-container h4 {
+  color: #02B1DA;
+}
+
+.category-container .hvr {
+  transition: 0.3s;
+  filter: brightness(0);
+  text-decoration: none;
+}
+
+.category-container:hover .hvr {
+  filter: none;
+}
+
+.category-container.view-more-container:hover {
+  background-color: #151515;
+}
+
+.category-container.view-more-container:hover h4 {
+  color: #fff;
+}
+
+.category-wrr .category-container {
+  flex-grow: 1;
+  min-width: 120px;
+}
+
+.category-wrr {
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.view-more span {
+  display: inline-block;
+  min-width: 7px;
+  min-height: 7px;
+  position: relative;
+  background: #02B1DA;
+  margin: 0px 2px;
+  border-radius: 50%;
+}
+
+.view-more-wr {
+  width: max-content;
+  margin: auto;
+  border: 2px solid #02B1DA;
+  border-radius: 50%;
+}
+
+.view-more {
+  width: 40px;
+  height: 40px;
+  background-color: #02B1DA1A;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 5px;
+}
+
+.heading p {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  color: #676767;
+}
+
+.heading p .inr-bold {
+  font-weight: 600;
+  color: #151515;
+}
+
+.four-step-slider .swiper-slide img {
+  min-width: 40px;
+  min-height: 40px;
+  width: 40px;
+  height: 40px;
+}
+
+.four-step-slider .img-wrr {
+  background-color: #02B1DA1A;
+  border-radius: 50%;
+  width: max-content;
 }
