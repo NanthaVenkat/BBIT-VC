@@ -206,6 +206,7 @@
 
 body {
   overflow-x: hidden;
+  background-color: #F8F9FB;
 }
 
 @media (min-width: 1770px) {
@@ -265,6 +266,14 @@ body {
   letter-spacing: 1.3px;
 }
 
+.ff-degular {
+  font-family: "Degular", sans-serif;
+}
+
+.ff-helvetica {
+  font-family: "Helvetica Neue", sans-serif;
+}
+
 .titles-title {
   font-weight: 500;
   font-family: 'Helvetica Neue', sans-serif;
@@ -279,7 +288,7 @@ body {
 
 @media (max-width: 576px) {
   .main-title {
-    font-size: 26px;
+    font-size: 22px;
   }
 }
 
@@ -345,7 +354,9 @@ body {
   transition: 0.3s;
   width: max-content;
   transform-origin: right;
+  transition: 0.3s;
 }
+
 
 .nav-search-bar.active {
   background-color: #02b1da4f;
@@ -355,9 +366,8 @@ body {
 
 .nav-search-bar input {
   display: none;
-}
-
-.nav-search-bar.active input {
+} 
+  .nav-search-bar.active input {
   outline: none;
   display: block;
   font-size: 14px;
@@ -473,7 +483,7 @@ body {
   line-height: 1;
   width: 40px;
   height: 40px;
-  border: 1px solid;
+  border: 2px solid;
   border-radius: 5px;
   align-items: center;
   justify-content: center;
@@ -664,4 +674,175 @@ body {
   background-color: #02B1DA1A;
   border-radius: 50%;
   width: max-content;
+}
+
+/* Doctor Section */
+.dr-details p {
+  color: #6B6B6B;
+}
+
+.dr-ratting {
+  background-image: url("../Images/ribbon-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 85px;
+  left: 0;
+}
+
+.dr-prfile-img img {
+  object-fit: cover;
+  width: 120px;
+  height: 120px;
+  object-position: top;
+  border-radius: 50%;
+}
+
+.dr-prfile-img {
+  width: max-content;
+}
+
+.inon-status {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  top: 5px;
+  right: 15px;
+}
+
+.inon-status.offline {
+  background: #FF0000;
+}
+
+.inon-status.online {
+  background: #36AA2C;
+}
+
+.dr-btn-wr .btn-wr a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.dr-btn-wr .btn-wr:first-child a {
+  color: #151515;
+  font-weight: 500;
+  border: 2px solid #EBEEF0;
+}
+
+.dr-btn-wr .btn-wr:first-child a:hover {
+  background-color: #57A4E91A;
+  color: #57A4E9;
+  border-color: #57A4E91A;
+}
+
+.dr-btn-wr .btn-wr:last-child a {
+  color: #fff;
+  font-weight: 500;
+  background-color: #02B1DA;
+}
+
+.view-all-wr .btn {
+  color: #151515;
+  border: 1px solid #151515;
+  font-weight: 400;
+}
+
+.view-all-wr .btn:hover {
+  color: #fff;
+  background-color: #151515;
+  font-weight: 400;
+}
+
+/* Results Section */
+.results-wrr {
+  gap: 15px;
+}
+
+.results-wrr .results {
+  flex-grow: 1;
+  font-weight: 500;
+}
+
+.results-wrr .results h4 {
+  font-weight: 600;
+  font-size: 70px;
+  -webkit-text-fill-color: #ffffff00;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(90deg, #F78D1E, #FFAA00 50%);
+  line-height: 1;
+}
+
+@media screen and (max-width: 576px) {
+  .results-wrr .results h4 {
+    font-size: 50px;
+  }
+}
+
+/* Testimonial */
+.testimonial-wrpr .profile, .testimonial-wrpr .profile img {
+  min-width: 200px;
+  width: 200px;
+  min-height: 200px;
+  height: 200px;
+}
+
+.testimonial-wrpr .testimonial-cnt p {
+  color: #676767;
+  font-weight: 500;
+}
+
+.testimonial-wrpr .testimonial-cnt h5 {
+  color: #151515;
+  font-weight: 600;
+}
+
+.testimonial-slider .swiper-button-next,
+.testimonial-slider .swiper-button-prev {
+  color: #151515;
+  line-height: 1;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #151515;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial-slider .swiper-button-next:after,
+.testimonial-slider .swiper-button-prev:after {
+  font-family: swiper-icons;
+  font-size: var(--swiper-navigation-size);
+  text-transform: none !important;
+  letter-spacing: 0;
+  font-variant: initial;
+  line-height: 1;
+}
+
+.testimonial-slider .swiper-button-next:after,
+.testimonial-slider .swiper-button-prev:after {
+  font-size: 18px;
+}
+
+.testimonial-slider .swiper-button-next {
+  right: 50px;
+}
+
+.testimonial-slider .swiper-button-prev {
+  left: 50px;
+}
+
+@media screen and (max-width: 576px) {
+  .testimonial-wrpr {
+    flex-direction: column;
+  }
+
+  .testimonial-wrpr .profile, .testimonial-wrpr .profile img {
+    min-width: 100px;
+    width: 100px;
+    min-height: 100px;
+    height: 100px;
+  }
 }

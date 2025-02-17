@@ -14,10 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
         setInterval(() => {
             inputField.placeholder = placeholders[index];
             index = (index + 1) % placeholders.length;
-
         }, 1000);
-
     }
+
 });
 
 // toggle button Script
@@ -35,4 +34,3 @@ document.addEventListener("DOMContentLoaded", () => {
         console.error("Element with ID 'dr-status-btn' not found!");
     }
 });
-

@@ -45,3 +45,48 @@ var swiper = new Swiper(".swiper-container.four-step-slider", {
         }
     }
 });
+
+
+// Doctor
+var swiper = new Swiper(".swiper-container.doctor-slider", {
+    spaceBetween: 20,
+    allowTOuchMove: true,
+    loop: false,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        576: {
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 4,
+        }
+    }
+});
+
+// Testimonial
+var swiper = new Swiper(".swiper-container.testimonial-slider", {
+    spaceBetween: 20,
+    allowTOuchMove: true,
+    loop: true,
+    navigation: {
+        nextEl: '.swiper-button-next.two',
+        prevEl: '.swiper-button-prev.two',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        576: {
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 2,
+        }
+    }
+});

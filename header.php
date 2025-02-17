@@ -18,6 +18,9 @@
     <!-- swiper slider -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Helvetica Neue -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/helvatica-neue-lt@1.0.1/index.min.css" rel="stylesheet"> -->
 
@@ -40,7 +43,7 @@
                 <ul class="message-items d-flex align-items-center mb-0">
                     <li class="me-3">
                         <div class="nav-search-bar rounded-5 d-flex align-items-center justify-content-between">
-                            <input type="text" placeholder="Search Content" class="border-0 me-2 bg-transparent">
+                            <input type="text" placeholder="Search Content" class="border-0 bg-transparent">
                             <a href="javascript:void(0)" id="hav-search-btn"><img src="images/search-lence-icon.svg" alt="Search Bar"></a>
                         </div>
                     </li>
