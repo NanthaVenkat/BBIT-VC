@@ -366,8 +366,9 @@ body {
 
 .nav-search-bar input {
   display: none;
-} 
-  .nav-search-bar.active input {
+}
+
+.nav-search-bar.active input {
   outline: none;
   display: block;
   font-size: 14px;
@@ -782,7 +783,8 @@ body {
 }
 
 /* Testimonial */
-.testimonial-wrpr .profile, .testimonial-wrpr .profile img {
+.testimonial-wrpr .profile,
+.testimonial-wrpr .profile img {
   min-width: 200px;
   width: 200px;
   min-height: 200px;
@@ -827,11 +829,11 @@ body {
 }
 
 .testimonial-slider .swiper-button-next {
-  right: 50px;
+  right: 0px;
 }
 
 .testimonial-slider .swiper-button-prev {
-  left: 50px;
+  left: 0px;
 }
 
 @media screen and (max-width: 576px) {
@@ -839,10 +841,112 @@ body {
     flex-direction: column;
   }
 
-  .testimonial-wrpr .profile, .testimonial-wrpr .profile img {
+  .testimonial-wrpr .profile,
+  .testimonial-wrpr .profile img {
     min-width: 100px;
     width: 100px;
     min-height: 100px;
     height: 100px;
   }
+}
+
+.testimonial-wrpr .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  transition: 0.3s;
+  background-color: #FFFFFF80;
+  opacity: 1;
+}
+
+.testimonial-wrpr .swiper-pagination-bullet-active {
+  width: 30px;
+  border-radius: 50px;
+  background-color: #02B1DA;
+}
+
+/* home form */
+.scrooling-text-wrr h1 {
+  font-weight: 700;
+}
+
+.scrolling-txt img {
+  height: 35px;
+}
+
+/* faq */
+.faq-titles {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+@media (max-width: 576px) {
+  .faq-titles {
+    font-size: 35px;
+  }
+}
+
+.faq-titles.kas {
+  color: #151515;
+}
+
+.faq-titles.faq {
+  color: #F78D1E;
+}
+
+.accordion-body {
+  color: #676767;
+}
+
+.accordion-button,
+.accordion-button:not(.collapsed) {
+  color: #151515;
+  box-shadow: none;
+}
+
+.accordion-item,
+.accordion-button {
+  border-radius: 0 !important;
+  font-weight: 500;
+}
+
+#homefaq .accordion-item {
+  border-width: 0 0 0 0;
+}
+
+#homefaq .accordion-item:not(#homefaq .accordion-item:last-child) {
+  border-width: 0 0 0 0;
+  border-bottom: 1px solid #151515;
+}
+
+footer {
+  background-color: #EBEEF0;
+}
+
+.footer-logo img {
+  width: 270px;
+}
+
+.social-media a {
+  padding: 8px;
+  border: 1px solid #151515;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media img {
+  width: 20px;
+  height: 20px;
+}
+
+.terms-and-condition h4 {
+  font-weight: 400;
+}
+
+.vericle-line {
+  border: 0.5px solid #B3B3B3;
+  height: 20px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
 }

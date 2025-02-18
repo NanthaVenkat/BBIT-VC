@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
             index = (index + 1) % placeholders.length;
         }, 1000);
     }
-
 });
 
 // toggle button Script
@@ -34,3 +33,10 @@ document.addEventListener("DOMContentLoaded", () => {
         console.error("Element with ID 'dr-status-btn' not found!");
     }
 });
+
+
+let thisYear = new Date();
+
+let copywriteYear = document.getElementById("this-year");
+
+copywriteYear.innerHTML = thisYear.getFullYear();

@@ -5,6 +5,7 @@
 <!-- Hero Section -->
 <section class="hero__section d-flex flex-column">
     <div class="swiper-container hero-swiper position-relative">
+
         <div class="swiper-wrapper">
             <!-- Slide 1 -->
             <div class="swiper-slide d-flex align-items-start align-items-sm-center py-5">
@@ -375,7 +376,7 @@
         </div>
 
         <!-- testimonial slider -->
-        <div class="swiper-container testimonial-slider position-relative overflow-hidden pb-4 pb-sm-0">
+        <div class="swiper-container testimonial-slider position-relative pb-4 pb-sm-0 px-5 overflow-hidden">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="testimonial-wrpr align-items-center d-flex">
@@ -416,7 +417,7 @@
                                         <img src="./Images/RatingStar.svg" alt="start">
                                     </div>
                                 </div>
-                                <p class="ff-helvetica text-sm">I had a very busy schedule which made visiting hospitals a difficult task for me. That is when I came upon this webpage from Sri Ramakrishna Hospital.</p>
+                                <p class="ff-helvetica text-sms">I had a very busy schedule which made visiting hospitals a difficult task for me. That is when I came upon this webpage from Sri Ramakrishna Hospital.</p>
                                 <h5 class="ff-degular text-md">Suganya</h5>
                             </div>
                         </div>
@@ -462,7 +463,7 @@
                                         <img src="./Images/RatingStar.svg" alt="start">
                                     </div>
                                 </div>
-                                <p class="ff-helvetica text-sm">I had a very busy schedule which made visiting hospitals a difficult task for me. That is when I came upon this webpage from Sri Ramakrishna Hospital.</p>
+                                <p class="ff-helvetica text-sms">I had a very busy schedule which made visiting hospitals a difficult task for me. That is when I came upon this webpage from Sri Ramakrishna Hospital.</p>
                                 <h5 class="ff-degular text-md">Suganya</h5>
                             </div>
                         </div>
@@ -480,14 +481,157 @@
     </div>
 </section>
 <!-- / Testimonials Section -->
-<section class="form-section py-4 py-md-5">
-    <div class="scrooling-text">
-        
+
+<!-- Form Section -->
+<section class="form-section bg-secondary">
+    <div class="scrooling-text-wrr ff-degular fw-700 pt-4 marquee">
+        <h1 class="text-white scrolling-txt d-flex align-items-start px-3 marquee-text"><span class="d-inline-block me-2"><img src="./Images/down-arrow-degular.svg" alt="Down Arrow Degular"></span>This form is open 24/7. Literally. Reach us here</h1>
+    </div>
+
+    <div class="home-form-wrr container py-4 py-md-5">
+        <form action="" class="home-form">
+            <div class="row">
+                <div class="input-wrr col-12 col-md-6 my-3 px-4">
+                    <input type="text" name="name" id="home-name" placeholder="Your Name" class="w-100 py-3 text-sm bg-transparent border-bottom">
+                </div>
+
+                <div class="input-wrr col-12 col-md-6 my-3 px-4">
+                    <input type="mail" name="mail" id="home-mail" placeholder="Your Email" class="w-100 py-3 text-sm bg-transparent border-bottom">
+                </div>
+
+                <div class="input-wrr col-12 col-md-6 my-3 px-4">
+                    <input type="number" name="phone" id="home-phone" placeholder="Your Phone" class="w-100 py-3 text-sm bg-transparent border-bottom">
+                </div>
+
+                <div class="input-wrr col-12 col-md-6 my-3 px-4">
+                    <textarea name="problems" id="home-textarea" placeholder="Share Problem Brief" class="w-100 py-3 text-sm bg-transparent border-bottom"></textarea>
+                </div>
+                <div class="homr-form-submit mt-4">
+                    <button class="btn bg-white rounded-5 text-sm fw-medium px-5 py-3">Get In Touch</button>
+                </div>
+            </div>
+        </form>
     </div>
 </section>
+
+<script>
+    $(document).ready(function() {
+        $('.marquee').marquee({
+            duration: 15000,
+            gap: 50,
+            delayBeforeStart: 0,
+            direction: 'left',
+            duplicated: true
+        });
+    });
+</script>
 <!-- Form Section -->
 
+<style>
+    .home-form .input-wrr input,
+    .home-form .input-wrr textarea {
+        border-width: 0 0 1px 0;
+        border-color: #fff;
+        outline: none;
+        max-height: 60px;
+        min-height: 60px;
+        height: 60px;
+        overflow: auto;
+        color: #fff;
+    }
 
+    .home-form .input-wrr input::placeholder,
+    .home-form .input-wrr textarea::placeholder {
+        color: #FFFFFF75;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    .accordion-button:focus {
+        box-shadow: none;
+    }
+</style>
+
+<section class="faq-section py-5">
+    <div class="faq-wrapper container">
+        <div class="row">
+            <div class="col-12 col-md-5 ff-degular">
+                <h2 class="faq-titles kas">Keep answer short</h2>
+                <h2 class="faq-titles faq">FAQs</h2>
+            </div>
+            <div class="col-12 col-md-7 px-3 px-md-5">
+                <div class="accordion" id="homefaq">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button px-0 text-sm bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What is referred to as video consultation?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#homefaq">
+                            <div class="accordion-body pt-0  ps-0 text-sms">
+                                I had a very busy schedule which made visiting hospitals a difficult task for me. That is when I came upon this webpage from Sri Ramakrishna Hospital.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button px-0 text-sm bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Does the Sri Ramakrishna Hospital provide video consultation?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#homefaq">
+                            <div class="accordion-body pt-0  ps-0 text-sms">
+                                I had a very busy schedule which made visiting hospitals a difficult task for me. That is when I came upon this webpage from Sri Ramakrishna Hospital.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button px-0 text-sm bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Is iclinic a safe app?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#homefaq">
+                            <div class="accordion-body pt-0  ps-0 text-sms">
+                                I had a very busy schedule which made visiting hospitals a difficult task for me. That is when I came upon this webpage from Sri Ramakrishna Hospital.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button px-0 text-sm bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                What is the process of video consultation?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#homefaq">
+                            <div class="accordion-body pt-0  ps-0 text-sms">
+                                I had a very busy schedule which made visiting hospitals a difficult task for me. That is when I came upon this webpage from Sri Ramakrishna Hospital.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button px-0 text-sm bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                What is referred to as video consultation?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#homefaq">
+                            <div class="accordion-body pt-0  ps-0 text-sms">
+                                I had a very busy schedule which made visiting hospitals a difficult task for me. That is when I came upon this webpage from Sri Ramakrishna Hospital.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- Footer -->
 <?php include "footer.php"; ?>
