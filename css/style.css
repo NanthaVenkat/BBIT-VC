@@ -850,18 +850,18 @@ body {
   }
 }
 
-.testimonial-wrpr .swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
+.testimonial-slider .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
   transition: 0.3s;
-  background-color: #FFFFFF80;
+  background-color: #15151538;
   opacity: 1;
 }
 
-.testimonial-wrpr .swiper-pagination-bullet-active {
-  width: 30px;
+.testimonial-slider .swiper-pagination-bullet-active {
+  width: 25px;
   border-radius: 50px;
-  background-color: #02B1DA;
+  background-color: #151515;
 }
 
 /* home form */
@@ -950,3 +950,4 @@ footer {
   align-items: center;
   justify-content: center;
 }
+

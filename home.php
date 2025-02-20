@@ -376,7 +376,10 @@
         </div>
 
         <!-- testimonial slider -->
-        <div class="swiper-container testimonial-slider position-relative pb-4 pb-sm-0 px-5 overflow-hidden">
+        <div class="swiper-container testimonial-slider position-relative pb-4 pb-sm-0 overflow-hidden">
+
+            <!-- Navigation Buttons -->
+            <div class="swiper-button-next two d-none d-sm-flex"></div>
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="testimonial-wrpr align-items-center d-flex">
@@ -475,7 +478,6 @@
             <div class="swiper-pagination justify-content-center d-flex d-sm-none"></div>
 
             <!-- Navigation Buttons -->
-            <div class="swiper-button-next two d-none d-sm-flex"></div>
             <div class="swiper-button-prev two d-none d-sm-flex"></div>
         </div>
     </div>
@@ -563,7 +565,7 @@
                 <h2 class="faq-titles kas">Keep answer short</h2>
                 <h2 class="faq-titles faq">FAQs</h2>
             </div>
-            <div class="col-12 col-md-7 px-3 px-md-5">
+            <div class="col-12 col-md-7 px-4 px-md-5">
                 <div class="accordion" id="homefaq">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">

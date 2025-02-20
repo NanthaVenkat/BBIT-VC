@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <script src="https://cdn.jsdelivr.net/npm/jquery.marquee@1.5.0/jquery.marquee.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+
 
     <!-- Helvetica Neue -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/helvatica-neue-lt@1.0.1/index.min.css" rel="stylesheet"> -->
@@ -44,10 +46,10 @@
             <div class="col-6 nav-right d-none d-md-flex align-items-center justify-content-end">
                 <ul class="message-items d-flex align-items-center mb-0">
                     <li class="me-3">
-                        <div class="nav-search-bar rounded-5 d-flex align-items-center justify-content-between">
-                            <input type="text" placeholder="Search Content" class="border-0 bg-transparent">
+                        <form class="nav-search-bar rounded-5 d-flex align-items-center justify-content-between">
+                            <input type="search" placeholder="Search Content" class="border-0 bg-transparent">
                             <a href="javascript:void(0)" id="hav-search-btn"><img src="images/search-lence-icon.svg" alt="Search Bar"></a>
-                        </div>
+                        </form>
                     </li>
                     <li class="me-3"><a href="#"><img src="images/message-square.svg" alt="Message"><span class="notifi-indicater">1</span></a></li>
                     <li class="me-3"><a href="#"><img src="images/bell-icon.svg" alt="Notification"><span class="notifi-indicater">9+</span></a></li>
