@@ -1,10 +1,33 @@
+// <!-- Header searechbar -->
 jQuery(document).ready(function () {
-    jQuery("#hav-search-btn").click(function () {
-        jQuery(".nav-search-bar").toggleClass("active");
+    let timeout; // Store timeout ID
+
+    // Add 'active' class on mouseover
+    jQuery("#nav-search-btn").mouseover(function () {
+        jQuery(".nav-search-bar").addClass("active");
+    });
+
+    // Remove 'active' class when mouse leaves the search bar
+    jQuery(".nav-search-bar").mouseleave(function () {
+        let searchInput = jQuery(".nav-search-bar input[type='search']").val(); // Get input value
+
+        if (searchInput === "" || searchInput === null) {
+            timeout = setTimeout(() => {
+                jQuery(".nav-search-bar").removeClass("active");
+            }, 3000); // Delay removal by 3 seconds
+        }
+    });
+
+    // Cancel timeout if user re-enters the search bar
+    jQuery(".nav-search-bar").mouseenter(function () {
+        clearTimeout(timeout);
     });
 });
 
-// search bar apear code
+// <!-- / Header searechbar -->
+
+
+// <!-- search bar apear code -->
 document.addEventListener("DOMContentLoaded", () => {
     const inputField = document.querySelector(".nav-search-bar input");
     const placeholders = ["Search Doctors", "Search Services", "Search Categories"];
@@ -17,8 +40,10 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 1000);
     }
 });
+// <!-- / search bar apear code -->
 
-// toggle button Script
+
+// <!-- toggle button Script -->
 document.addEventListener("DOMContentLoaded", () => {
     let drStatusBtn = document.getElementById("dr-status-btn");
 
@@ -33,10 +58,38 @@ document.addEventListener("DOMContentLoaded", () => {
         console.error("Element with ID 'dr-status-btn' not found!");
     }
 });
+// <!-- / toggle button Script -->
 
 
+// <!-- Copy Writes -->
 let thisYear = new Date();
-
 let copywriteYear = document.getElementById("this-year");
-
 copywriteYear.innerHTML = thisYear.getFullYear();
+// <!-- Copy Writes -->
+
+
+// Doctors page 
+// <!-- display the coresponded doctors tiles -->
+$(document).ready(function () {
+    $('.doctors-fliter a').click(function (e) {
+        e.preventDefault();
+
+        // Remove active class from all buttons and add to the clicked one
+        $('.doctors-fliter a').removeClass('active');
+        $(this).addClass('active');
+
+        let category = $(this).data('category');
+
+
+        if (category === 'all-doctor') {
+            // Show all doctor categories
+            $('.row > .col-of-docs').fadeIn(500);
+        } else {
+            // Hide all and show only the selected category
+            $('.row > .col-of-docs').fadeOut(500, () => {
+                $('.row > .col-of-docs[data-category="' + category + '"]').fadeIn(500);
+            });
+        }
+    });
+});
+// <!-- / Doctors Category -->

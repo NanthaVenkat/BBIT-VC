@@ -941,6 +941,7 @@ footer {
 
 .terms-and-condition h4 {
   font-weight: 400;
+  width: max-content;
 }
 
 .vericle-line {
@@ -951,3 +952,59 @@ footer {
   justify-content: center;
 }
 
+/* rating stars */
+
+.dr-rating .stars {
+  width: max-content;
+}
+
+.stars i {
+  margin: 0 1px;
+}
+
+.stars i.not {
+  color: #878181;
+}
+
+.stars i.on {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg, #FFAA00 50%, #FFBD38 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* /Bread Crumb */
+ul.breadcrumb {
+  list-style: none;
+}
+
+@media screen and (max-width: 576px) {
+  ul.breadcrumb.text-sms {
+    font-size: 12px !important;
+  }
+}
+
+ul.breadcrumb .location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  color: #838383;
+}
+
+ul.breadcrumb .location img {
+  width: 20px;
+  height: 20px;
+}
+
+ul.breadcrumb .location.current {
+  color: #02B1DA;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+ul.breadcrumb li+li:before {
+  padding: 0 5px;
+  color: black;
+  content: "/\00a0";
+}

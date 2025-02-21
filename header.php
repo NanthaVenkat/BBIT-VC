@@ -35,7 +35,7 @@
         <div class="row w-100 justify-content-center justify-content-lg-start">
             <div class="col-12 col-sm-6 nav-left logo-wrr d-flex align-items-center justify-content-center justify-content-md-start">
                 <a class="navbar-brand me-0 me-lg-5" href="#"><img src="images/BBIT-logo.svg" alt="Bright Bridge Logo"></a>
-                <div class="d-none d-lg-block">
+                <div class="d-none d-xl-block">
                     <ul class="navbar-nav">
                         <li class="nav-item"><a href="" class="nav-link">Find Doctors</a></li>
                         <li class="nav-item"><a href="" class="nav-link">Contact Us</a></li>
@@ -48,7 +48,7 @@
                     <li class="me-3">
                         <form class="nav-search-bar rounded-5 d-flex align-items-center justify-content-between">
                             <input type="search" placeholder="Search Content" class="border-0 bg-transparent">
-                            <a href="javascript:void(0)" id="hav-search-btn"><img src="images/search-lence-icon.svg" alt="Search Bar"></a>
+                            <a href="javascript:void(0)" id="nav-search-btn"><img src="images/search-lence-icon.svg" alt="Search Bar"></a>
                         </form>
                     </li>
                     <li class="me-3"><a href="#"><img src="images/message-square.svg" alt="Message"><span class="notifi-indicater">1</span></a></li>

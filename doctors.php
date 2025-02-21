@@ -100,21 +100,6 @@
         color: #fff;
     }
 
-    .dr-rating .stars {
-        width: max-content;
-    }
-
-    .stars i.not {
-        color: #6b6b6b5c;
-    }
-
-    .stars i.on {
-        -webkit-text-fill-color: transparent;
-        background: linear-gradient(90deg, #FFAA00 50%, #FFBD38 50%);
-        -webkit-background-clip: text;
-        background-clip: text;
-    }
-
     @media screen and (min-width: 1400px) {
         .doctor-bio {
             border-right: 1px solid #E3E3E3;
@@ -190,44 +175,21 @@
         color: #fff !important;
         background-color: #02B1DA !important;
     }
-
-    ul.breadcrumb {
-        list-style: none;
-    }
-
-    ul.breadcrumb .location {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    ul.breadcrumb .location img {
-        width: 20px;
-        height: 20px;
-    }
-
-    ul.breadcrumb .location.current {
-        color: #02B1DA;
-        font-weight: 500;
-        cursor: pointer;
-    }
-
-    ul.breadcrumb li+li:before {
-        padding: 0 5px;
-        color: black;
-        content: "/\00a0";
-    }
 </style>
 
 <!-- Hero Section -->
 <section class="hero-section__doctors py-4 py-md-5">
     <div class="container">
         <div class="bread-crums-wrr">
-            <ul class="breadcrumb d-flex align-items-center justify-content-start">
+
+            <!-- bread Crumb -->
+            <ul class="breadcrumb d-flex align-items-center justify-content-start text-sms">
                 <li class="location"><img src="./Images/bread-home.svg" alt="Home Button"></li>
                 <li class="current location">Doctors</li>
             </ul>
         </div>
+        <!-- / bread Crumb -->
+
         <div class="hero-image text-center"><img src="./Images/SRH-logo-icon.svg" alt="sri ramakrishna hospital logo"></div>
         <h1 class="text-center ff-degular">Doctors at Sri Ramakrishna Hospital</h1>
         <p class="text-center text-sms">"Find one of the best Doctors to get instant medical advice and second opinion for your health problems. <br>
@@ -367,34 +329,7 @@
     </div>
 </section>
 <!-- / Doctors Category -->
-
-<!-- display the coresponded doctors tiles -->
-<script>
-    console.log(typeof jQuery !== "undefined" ? "jQuery is loaded!" : "jQuery is NOT loaded!");
-
-    $(document).ready(function() {
-        $('.doctors-fliter a').click(function(e) {
-            e.preventDefault();
-
-            // Remove active class from all buttons and add to the clicked one
-            $('.doctors-fliter a').removeClass('active');
-            $(this).addClass('active');
-
-            let category = $(this).data('category');
-
-            if (category === 'all-doctor') {
-                // Show all doctor categories
-                $('.row > .col-of-docs').show();
-            } else {
-                // Hide all and show only the selected category
-                $('.row > .col-of-docs').hide();
-                $('.row > .col-of-docs[data-category="' + category + '"]').show();
-            }
-        });
-    });
-</script>
-<!-- / Doctors Category -->
-
+ 
 <!-- Footer -->
 <?php require "footer.php"; ?>
 <!-- / Footer -->
