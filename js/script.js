@@ -71,6 +71,16 @@ copywriteYear.innerHTML = thisYear.getFullYear();
 // Doctors page 
 // <!-- display the coresponded doctors tiles -->
 $(document).ready(function () {
+
+    // Correct element selection
+    let doctorsCard = $('[data-location="doctors-page"]');
+
+    // Click event
+    doctorsCard.click(() => {
+        window.location.href = "/bbit-vc/individual-doctors.php";
+    });
+
+    // Filter functionality
     $('.doctors-fliter a').click(function (e) {
         e.preventDefault();
 
@@ -80,16 +90,16 @@ $(document).ready(function () {
 
         let category = $(this).data('category');
 
-
         if (category === 'all-doctor') {
             // Show all doctor categories
             $('.row > .col-of-docs').fadeIn(500);
         } else {
             // Hide all and show only the selected category
-            $('.row > .col-of-docs').fadeOut(500, () => {
+            $('.row > .col-of-docs').fadeOut(500, function () {
                 $('.row > .col-of-docs[data-category="' + category + '"]').fadeIn(500);
             });
         }
     });
 });
+
 // <!-- / Doctors Category -->

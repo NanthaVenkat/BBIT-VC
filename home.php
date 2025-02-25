@@ -91,7 +91,7 @@
         <p class="titles-title text-sm mb-2">Categories</p>
         <h3 class="main-title">Services for your Health</h3>
 
-        <div class="category-wrr d-flex flex-wrap py-4">
+        <div class="category-wrr d-flex flex-wrap flex-xl-nowrap py-4">
             <a href="#" class="category-container rounded p-3 d-flex align-items-center justify-content-between flex-column">
                 <img src="./Images/Dentist-Icon.svg" alt="Dentist" class="hvr mb-2">
                 <h4 class="text-sm hvr">Dentist</h4>
@@ -146,7 +146,7 @@
         <div class="heading text-center mb-4 mb-md-5">
             <h3 class="main-title">4 Easy steps and get your solution</h3>
             <p class="text-sms mb-0">Navigation health together: Your trusted medical resource.</p>
-            <p class="text-sms mb-0">Medicine meets technology your <span class="inr-bold">online health hub</span></p>
+            <p class="text-sms mb-0">Medicine meets technology your <span class="inr-bold">status-online health hub</span></p>
         </div>
 
         <!-- slider -->
@@ -158,7 +158,7 @@
                     </div>
                     <div class="cnt-wr">
                         <h3 class="text-md">Check Doctor Profile</h3>
-                        <p class="text-sms">Navigating health together your trusted medical resource. Medicine meets technology your <span class="inr-bold">Online Health Hub</span></p>
+                        <p class="text-sms">Navigating health together your trusted medical resource. Medicine meets technology your <span class="inr-bold">status-online Health Hub</span></p>
                     </div>
                 </div>
 
@@ -168,7 +168,7 @@
                     </div>
                     <div class="cnt-wr">
                         <h3 class="text-md">Request Consultation</h3>
-                        <p class="text-sms">Navigating health together your trusted medical resource. Medicine meets technology your <span class="inr-bold">Online Health Hub</span></p>
+                        <p class="text-sms">Navigating health together your trusted medical resource. Medicine meets technology your <span class="inr-bold">status-online Health Hub</span></p>
                     </div>
                 </div>
 
@@ -178,7 +178,7 @@
                     </div>
                     <div class="cnt-wr">
                         <h3 class="text-md">Schedule Meeting</h3>
-                        <p class="text-sms">Navigating health together your trusted medical resource. Medicine meets technology your <span class="inr-bold">Online Health Hub</span></p>
+                        <p class="text-sms">Navigating health together your trusted medical resource. Medicine meets technology your <span class="inr-bold">status-online Health Hub</span></p>
                     </div>
                 </div>
 
@@ -188,7 +188,7 @@
                     </div>
                     <div class="cnt-wr">
                         <h3 class="text-md">Get your Solution</h3>
-                        <p class="text-sms">Navigating health together your trusted medical resource. Medicine meets technology your <span class="inr-bold">Online Health Hub</span></p>
+                        <p class="text-sms">Navigating health together your trusted medical resource. Medicine meets technology your <span class="inr-bold">status-online Health Hub</span></p>
                     </div>
                 </div>
             </div>
@@ -218,7 +218,7 @@
                     </div>
 
                     <div class="dr-prfile-img position-relative mb-3 mx-auto">
-                        <span class="position-absolute inon-status offline d-inline-block"></span>
+                        <span class="position-absolute inon-status status-offline d-inline-block"></span>
                         <img src="./Images/Dr.S.Balaji.webp" alt="Balaji">
                     </div>
 
@@ -248,7 +248,7 @@
                     </div>
 
                     <div class="dr-prfile-img position-relative mb-3 mx-auto">
-                        <span class="position-absolute inon-status online d-inline-block"></span>
+                        <span class="position-absolute inon-status status-online d-inline-block"></span>
                         <img src="./Images/Dr.S.Balaji.webp" alt="Balaji">
                     </div>
 
@@ -278,7 +278,7 @@
                     </div>
 
                     <div class="dr-prfile-img position-relative mb-3 mx-auto">
-                        <span class="position-absolute inon-status offline d-inline-block"></span>
+                        <span class="position-absolute inon-status status-offline d-inline-block"></span>
                         <img src="./Images/Dr.S.Balaji.webp" alt="Balaji">
                     </div>
 
@@ -308,7 +308,7 @@
                     </div>
 
                     <div class="dr-prfile-img position-relative mb-3 mx-auto">
-                        <span class="position-absolute inon-status online d-inline-block"></span>
+                        <span class="position-absolute inon-status status-online d-inline-block"></span>
                         <img src="./Images/Dr.S.Balaji.webp" alt="Balaji">
                     </div>
 
@@ -368,126 +368,17 @@
 <!-- / Results Section -->
 
 <!-- Testimonials Section -->
-<section class="testimonial py-4 py-md-5">
-    <div class="container">
-        <div class="text-center mb-4 mb-md-5">
-            <p class="titles-title text-sm mb-2">Meet Our Doctors</p>
-            <h3 class="main-title">We’re Dedicated to Your well-Being</h3>
-        </div>
-
-        <!-- testimonial slider -->
-        <div class="swiper-container testimonial-slider position-relative pb-4 pb-sm-0 overflow-hidden">
-
-            <!-- Navigation Buttons -->
-            <div class="swiper-button-next two d-none d-sm-flex"></div>
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="testimonial-wrpr align-items-center d-flex">
-                        <div class="profile rounded-4 overflow-hidden d-flex align-items-center justify-content-center me-0 me-sm-4 mb-4 mb-sm-0">
-                            <img src="./Images/review.webp" alt="Person">
-                        </div>
-                        <div class="coments">
-                            <div class="testimonial-cnt text-center text-md-start">
-                                <div class="str-ratings mb-3 mb-sm-4">
-                                    <div class="start-wrpper align-items-center d-flex justify-content-center justify-content-sm-start">
-                                        <img src="./Images/RatingStar.svg" alt="start">
-                                        <img src="./Images/RatingStar.svg" alt="start">
-                                        <img src="./Images/RatingStar.svg" alt="start">
-                                        <img src="./Images/RatingStar.svg" alt="start">
-                                        <img src="./Images/RatingStar.svg" alt="start">
-                                    </div>
-                                </div>
-                                <p class="ff-helvetica text-sm">I had a very busy schedule which made visiting hospitals a difficult task for me. That is when I came upon this webpage from Sri Ramakrishna Hospital.</p>
-                                <h5 class="ff-degular text-md">Suganya</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="testimonial-wrpr align-items-center d-flex">
-                        <div class="profile rounded-4 overflow-hidden d-flex align-items-center justify-content-center me-0 me-sm-4 mb-4 mb-sm-0">
-                            <img src="./Images/review(2).webp" alt="Person">
-                        </div>
-                        <div class="coments">
-                            <div class="testimonial-cnt text-center text-md-start">
-                                <div class="str-ratings mb-3 mb-sm-4">
-                                    <div class="start-wrpper align-items-center d-flex justify-content-center justify-content-sm-start">
-                                        <img src="./Images/RatingStar.svg" alt="start">
-                                        <img src="./Images/RatingStar.svg" alt="start">
-                                        <img src="./Images/RatingStar.svg" alt="start">
-                                        <img src="./Images/RatingStar.svg" alt="start">
-                                        <img src="./Images/RatingStar.svg" alt="start">
-                                    </div>
-                                </div>
-                                <p class="ff-helvetica text-sms">I had a very busy schedule which made visiting hospitals a difficult task for me. That is when I came upon this webpage from Sri Ramakrishna Hospital.</p>
-                                <h5 class="ff-degular text-md">Suganya</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="testimonial-wrpr align-items-center d-flex">
-                        <div class="profile rounded-4 overflow-hidden d-flex align-items-center justify-content-center me-0 me-sm-4 mb-4 mb-sm-0">
-                            <img src="./Images/review.webp" alt="Person">
-                        </div>
-                        <div class="coments">
-                            <div class="testimonial-cnt text-center text-md-start">
-                                <div class="str-ratings mb-3 mb-sm-4">
-                                    <div class="start-wrpper align-items-center d-flex justify-content-center justify-content-sm-start">
-                                        <img src="./Images/RatingStar.svg" alt="start">
-                                        <img src="./Images/RatingStar.svg" alt="start">
-                                        <img src="./Images/RatingStar.svg" alt="start">
-                                        <img src="./Images/RatingStar.svg" alt="start">
-                                        <img src="./Images/RatingStar.svg" alt="start">
-                                    </div>
-                                </div>
-                                <p class="ff-helvetica text-sm">I had a very busy schedule which made visiting hospitals a difficult task for me. That is when I came upon this webpage from Sri Ramakrishna Hospital.</p>
-                                <h5 class="ff-degular text-md">Suganya</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="testimonial-wrpr align-items-center d-flex">
-                        <div class="profile rounded-4 overflow-hidden d-flex align-items-center justify-content-center me-0 me-sm-4 mb-4 mb-sm-0">
-                            <img src="./Images/review(2).webp" alt="Person">
-                        </div>
-                        <div class="coments">
-                            <div class="testimonial-cnt text-center text-md-start">
-                                <div class="str-ratings mb-3 mb-sm-4">
-                                    <div class="start-wrpper align-items-center d-flex justify-content-center justify-content-sm-start">
-                                        <img src="./Images/RatingStar.svg" alt="start">
-                                        <img src="./Images/RatingStar.svg" alt="start">
-                                        <img src="./Images/RatingStar.svg" alt="start">
-                                        <img src="./Images/RatingStar.svg" alt="start">
-                                        <img src="./Images/RatingStar.svg" alt="start">
-                                    </div>
-                                </div>
-                                <p class="ff-helvetica text-sms">I had a very busy schedule which made visiting hospitals a difficult task for me. That is when I came upon this webpage from Sri Ramakrishna Hospital.</p>
-                                <h5 class="ff-degular text-md">Suganya</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Pagination -->
-            <div class="swiper-pagination justify-content-center d-flex d-sm-none"></div>
-
-            <!-- Navigation Buttons -->
-            <div class="swiper-button-prev two d-none d-sm-flex"></div>
-        </div>
-    </div>
-</section>
+<?php include "./template-parts/testimonials-section.php"; ?>
 <!-- / Testimonials Section -->
 
 <!-- Form Section -->
 <section class="form-section bg-secondary">
     <div class="scrooling-text-wrr ff-degular fw-700 pt-4 marquee">
-        <h1 class="text-white scrolling-txt d-flex align-items-start px-3 marquee-text"><span class="d-inline-block me-2"><img src="./Images/down-arrow-degular.svg" alt="Down Arrow Degular"></span>This form is open 24/7. Literally. Reach us here</h1>
+        <h1 class="text-white scrolling-txt d-flex align-items-start px-3 marquee-text">
+            <span class="d-inline-block me-2">
+                <img src="./Images/down-arrow-degular.svg" alt="Down Arrow Degular">
+            </span>This form is open 24/7. Literally. Reach us here
+        </h1>
     </div>
 
     <div class="home-form-wrr container py-4 py-md-5">

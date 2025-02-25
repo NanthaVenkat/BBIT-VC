@@ -226,7 +226,7 @@
         <div class="row">
 
             <!-- book consult wrapper -->
-            <div class="col-of-docs col-12 col-lg-6" data-category="cardiology">
+            <div class="col-of-docs col-12 col-lg-6" data-location="doctors-page" data-category="cardiology">
                 <div class="doctors-details__wrr d-flex align-items-center justify-content-center bg-white border rounded-4 py-3 mb-4 mb-lg-0 flex-column flex-sm-row">
                     <div class="doctors-resume w-100 d-flex align-items-start">
                         <div class="doctor-dp mx-3 ">
@@ -275,7 +275,7 @@
             </div>
 
             <!-- book consult wrapper -->
-            <div class="col-of-docs col-12 col-lg-6" data-category="endocrinology">
+            <div class="col-of-docs col-12 col-lg-6" data-location="doctors-page" data-category="endocrinology">
                 <div class="doctors-details__wrr d-flex align-items-center justify-content-center bg-white border rounded-4 py-3 mb-4 mb-lg-0 flex-column flex-sm-row">
                     <div class="doctors-resume w-100 d-flex align-items-start">
                         <div class="doctor-dp mx-3 ">
