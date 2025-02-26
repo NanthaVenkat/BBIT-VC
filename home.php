@@ -373,15 +373,19 @@
 
 <!-- Form Section -->
 <section class="form-section bg-secondary">
-    <div class="scrooling-text-wrr ff-degular fw-700 pt-4 marquee">
-        <h1 class="text-white scrolling-txt d-flex align-items-start px-3 marquee-text">
+    <div class="scrooling-text-wrr ff-degular fw-700 pt-4 d-flex position-relative overflow-hidden">
+        <?php 
+        for($i=0; $i < 5; $i++){
+            echo '<h1 class="text-white scrolling-txt d-flex align-items-start px-3 marquee-text">
             <span class="d-inline-block me-2">
-                <img src="./Images/down-arrow-degular.svg" alt="Down Arrow Degular">
+                <img src="./Images/down-arrow-degular.svg" alt="Down Arrow Degular" class="pe-3">
             </span>This form is open 24/7. Literally. Reach us here
-        </h1>
+        </h1>';
+        }
+        ?>
     </div>
 
-    <div class="home-form-wrr container py-4 py-md-5">
+    <div class="home-form-wrr container pt-0 pt-sm-4 py-4 py-md-5">
         <form action="" class="home-form">
             <div class="row">
                 <div class="input-wrr col-12 col-md-6 my-3 px-4">
@@ -408,16 +412,52 @@
 </section>
 
 <script>
-    $(document).ready(function() {
-        $('.marquee').marquee({
-            duration: 15000,
-            gap: 50,
-            delayBeforeStart: 0,
-            direction: 'left',
-            duplicated: true
+    jQuery(document).ready(function() {
+        var speed = 10000;
+
+        jQuery('.scrooling-text-wrr h1').css({
+            'animation-duration': speed + 'ms'
         });
     });
 </script>
+
+<style>
+    /* scrolling text */
+    .scrooling-text-wrr {
+        width: 100%;
+        white-space: nowrap;
+    }
+
+    .scrooling-text-wrr h1 {
+        animation: scroll 30s linear infinite;
+    }
+
+    /* .scrooling-text-wrr span:before {
+        content: "+";
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 30px;
+        height: 30px;
+        font-size: 30px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-right: 30px;
+    } */
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-80%);
+        }
+    }
+</style>
 <!-- Form Section -->
 
 <style>
