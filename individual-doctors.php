@@ -262,7 +262,7 @@
             </div>
 
             <!-- Doctor Contemnt -->
-            <div class="doctors-cnt-btn__wrr col-12 col-xl-3 d-flex align-content-center flex-column flex-sm -row flex-xl-column justify-content-center mt-4 mt-xl-0">
+            <div class="doctors-cnt-btn__wrr col-12 col-xl-3 d-flex align-content-center flex-column flex-sm-row flex-xl-column justify-content-center mt-4 mt-xl-0">
                 <a href="#" class="btn d-flex align-items-center mb-3 mb-sm-0 me-4 me-xl-0 mb-xl-4 rounded-1 px-4 py-2 justify-content-center w-100 aaq"><span class="d-inline-flex me-2"><img src="./Images/envelope.svg" alt="envelope"></span><span>Ask a Query</span></a>
 
                 <a href="#" class="btn d-flex align-items-center rounded-1 px-4 py-2 justify-content-center w-100 cov"><span class="d-inline-flex me-2"><img src="./Images/video-camera.svg" alt=""></span><span>Consult on Video</span></a>

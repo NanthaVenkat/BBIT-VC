@@ -12,6 +12,9 @@
     <!-- custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- Login/Signup CSS -->
+    <link rel="stylesheet" href="css/login.css">
+
     <!-- bootstrap Script -->
     <script src="js/bootstrap.bundle.min.js"></script>
 
@@ -55,8 +58,8 @@
                     <li class="me-3"><a href="#"><img src="images/bell-icon.svg" alt="Notification"><span class="notifi-indicater">9+</span></a></li>
                 </ul>
 
-                <div class="log-in id-btn"><a href="#" class="btn btn-light ms-3 rounded-1">Log In</a></div>
-                <div class="sign-up id-btn"><a href="#" class="btn btn-primary ms-3 rounded-1 ">Sign Up</a></div>
+                <div class="log-in id-btn"><a href="login.php" class="btn btn-light ms-3 rounded-1">Log In</a></div>
+                <div class="sign-up id-btn"><a href="signin.php" class="btn btn-primary ms-3 rounded-1 ">Sign Up</a></div>
             </div>
         </div>
     </div>

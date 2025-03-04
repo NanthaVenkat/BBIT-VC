@@ -54,9 +54,10 @@ document.addEventListener("DOMContentLoaded", () => {
             drStatusBtn.classList.toggle("disable");
             drStatusBtn.classList.toggle("enable");
         });
-    } else {
-        console.error("Element with ID 'dr-status-btn' not found!");
     }
+    // else {
+    //     console.error("Element with ID 'dr-status-btn' not found!");
+    // }
 });
 // <!-- / toggle button Script -->
 
@@ -64,7 +65,10 @@ document.addEventListener("DOMContentLoaded", () => {
 // <!-- Copy Writes -->
 let thisYear = new Date();
 let copywriteYear = document.getElementById("this-year");
-copywriteYear.innerHTML = thisYear.getFullYear();
+
+if (copywriteYear) {
+    copywriteYear.innerHTML = thisYear.getFullYear();
+}
 // <!-- Copy Writes -->
 
 
@@ -103,3 +107,202 @@ $(document).ready(function () {
 });
 
 // <!-- / Doctors Category -->
+
+// Form Validation
+// show hide password
+let showHideBtn = $(".toggle-pass");
+$(document).ready(function () {
+    showHideBtn.on("click", function (e) {
+        e.preventDefault();
+
+        let passInput = $(this).closest(".password-wr").find("input");
+        let showHideImg = $(this).find("i");
+
+        if (passInput.prop("type") === "password") {
+            passInput.prop("type", "text");
+            showHideImg.removeClass("fa-eye-slash").addClass("fa-eye");
+        } else {
+            passInput.prop("type", "password");
+            showHideImg.removeClass("fa-eye").addClass("fa-eye-slash");
+        }
+    });
+});
+
+// form error hadling 
+// $(".signin-form").on("submit", function (e) {
+//     e.preventDefault();  // Prevent form submission
+
+//     const userName = $(this).find(".username");
+//     const email = $(this).find(".email");
+//     const password = $(this).find(".password");
+//     const confPassword = $(this).find(".conf-password");
+
+//     let isValid = true;
+
+//     // Username validation
+//     if (userName.val().trim() === "") {
+//         setError(userName, "Username is required");
+//         isValid = false;
+//     } else {
+//         setSuccess(userName);
+//     }
+
+//     // Email validation
+//     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+//     if (email.val().trim() === "") {
+//         setError(email, "Email is required");
+//         isValid = false;
+//     } else if (!emailPattern.test(email.val().trim())) {
+//         setError(email, "Please enter a valid email");
+//         isValid = false;
+//     } else {
+//         setSuccess(email);
+//     }
+
+//     // Password validation
+//     if (password.val().trim() === "") {
+//         setError(password, "Password is required");
+//         isValid = false;
+//     } else if (password.val().trim().length < 5) {
+//         setError(password, "Password must have more than 5 characters");
+//         isValid = false;
+//     } else {
+//         setSuccess(password);
+//     }
+
+//     // Confirm password validation
+//     if (confPassword.val().trim() === "") {
+//         setError(confPassword, "Please confirm your password");
+//         isValid = false;
+//     } else if (confPassword.val().trim() !== password.val().trim()) {
+//         setError(confPassword, "Passwords do not match");
+//         isValid = false;
+//     } else {
+//         setSuccess(confPassword);
+//     }
+
+//     // Submit form if all validations pass
+//     if (isValid) {
+//         this.submit();
+//     }
+// });
+
+// // Set error function
+// const setError = (element, message) => {
+//     // element.next(".error").text(message).show();
+//     element.removeClass("success").addClass("error");
+// };
+
+// // Set success function
+// const setSuccess = (element) => {
+//     // element.next(".error").hide();
+//     element.removeClass("error").addClass("success");
+// };
+
+$(".signin-form").on("submit", function (e) {
+    e.preventDefault();  // Prevent form submission
+
+    const userName = $(this).find(".username");
+    const email = $(this).find(".email");
+    const phone = $(this).find(".phone");
+    const password = $(this).find(".password");
+    const confPassword = $(this).find(".conf-password");
+    const inputWrr = $(this).find(".inr-input");
+
+    let isValid = true;
+
+    // Username validation
+    if (userName.val().trim() === "") {
+        setError(userName, "Username is required");
+        isValid = false;
+    } else {
+        setSuccess(userName);
+    }
+
+    // Email validation
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (email.val().trim() === "") {
+        setError(email, "Email is required");
+        isValid = false;
+    } else if (!emailPattern.test(email.val().trim())) {
+        setError(email, "Enter a valid email");
+        isValid = false;
+    } else {
+        setSuccess(email);
+    }
+
+    // Phone number validation (10 digits only)
+    const phonePattern = /^\d{10}$/;
+    if (phone.val().trim() === "") {
+        setError(phone, "Phone number is required");
+        isValid = false;
+    } else if (!phonePattern.test(phone.val().trim())) {
+        setError(phone, "Enter a valid 10-digit phone number");
+        isValid = false;
+    } else {
+        setSuccess(phone);
+    }
+
+    // Password validation
+    if (password.val().trim() === "") {
+        setError(password, "Password is required");
+        isValid = false;
+    } else if (password.val().trim().length < 5) {
+        setError(password, "At least 5 characters");
+        isValid = false;
+    } else {
+        setSuccess(password);
+    }
+
+    // Confirm password validation
+    if (confPassword.val().trim() === "") {
+        setError(confPassword, "Confirm your password");
+        isValid = false;
+    } else if (confPassword.val().trim() !== password.val().trim()) {
+        setError(confPassword, "Passwords do not match");
+        isValid = false;
+    } else {
+        setSuccess(confPassword);
+    }
+
+    // Submit form if all validations pass
+    if (isValid) {
+        this.submit();
+    }
+});
+
+// Set error: Red border & placeholder
+const setError = (element, message) => {
+    // element.css({
+    //     "border-color": "red",
+    //     "color": "red"
+    // }).val("").attr("placeholder", message);
+    element.addClass("error").removeClass("success").val("").attr("placeholder", message);
+};
+
+// Set success: Green border & reset placeholder
+const setSuccess = (element) => {
+    // element.css({
+    //     "border-color": "green",
+    //     "color": "white"
+    // })
+    
+    element.addClass("success").removeClass("error").attr("placeholder", "");
+};
+
+// Toggle password visibility
+// $(".toggle-pass").on("click", function (e) {
+//     e.preventDefault();
+//     const input = $(this).siblings("input");
+//     const icon = $(this).find("i");
+
+//     if (input.attr("type") === "password") {
+//         input.attr("type", "text");
+//         icon.removeClass("fa-eye-slash").addClass("fa-eye");
+//     } else {
+//         input.attr("type", "password");
+//         icon.removeClass("fa-eye").addClass("fa-eye-slash");
+//     }
+// });
+
+
